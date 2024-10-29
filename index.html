@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TraveLeaf</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo1">
+        <img src="/images/logo.svg" alt="logo"/>
+        <p id="slogan">Your Personal Travel Journal</p>
+      </div>
+
+      <div class="menu">
+        <button class="btn-outline">
+          Log out<img src="/icons/logout-04.svg" />
+        </button>
+        <img class="circle-large-btn" src="/icons/bell-03.svg" alt="bell" />
+        <img class="circle-large-btn" id="menu-btn" src="/icons/menu-03.svg" alt="menu" />
+           </div>
+          </nav>
+
+       <div class="dropdown-modal hide">
+        
+        <a href="/html/index.html">
+      <div class="drop-list">
+      <img src ="/icons/home-04.svg">
+      <p class ="drop-name">Home</p>
+      </div></a>
+
+      <a href="/html/create-journal.html">
+       <div class="drop-list">
+      <img src ="/icons/edit-02.svg">
+      <p class ="drop-name">Create a Journal</p>
+      </div></a>
+
+  <a href="/html/location-map.html">
+       <div class="drop-list">
+      <img src ="/icons/marker-02.svg">
+      <p class ="drop-name">Location Map</p>
+      </div>
+    </a>
+      
+     <a href="/html/travel-journals.html">
+       <div class="drop-list">
+      <img src ="/icons/book-03.svg">
+      <p class ="drop-name">Travel Journals</p>
+      </div></a>
+
+      <hr>
+       <div class="drop-list">
+      <img src ="/icons/settings.svg">
+      <p class ="drop-name">Setting</p>
+      </div>
+       <div class="drop-list">
+      <img src ="/icons/logout-04.svg">
+      <p class ="drop-name">Log out</p>
+      </div>
+       </div>
+
+    <div class="mobile-nav">
+      <a href="index.html">
+      <img src="/images/logo.svg" alt="logo" /></a>
+      <img class="circle-large-btn" id="mobile-menu" src="/icons/menu-03.svg" alt="menu" />
+    </div>
+
+<div class="mobile-dropdown-modal hide">
+         <a href="/html/index.html">
+      <div class="drop-list">
+      <img src ="/icons/home-04.svg">
+      <p class ="drop-name">Home</p>
+      </div></a>
+
+      <a href="/html/create-journal.html">
+       <div class="drop-list">
+      <img src ="/icons/edit-02.svg">
+      <p class ="drop-name">Create a Journal</p>
+      </div></a>
+
+  <a href="/html/location-map.html">
+       <div class="drop-list">
+      <img src ="/icons/marker-02.svg">
+      <p class ="drop-name">Location Map</p>
+      </div>
+    </a>
+
+     <a href="/html/travel-journals.html">
+       <div class="drop-list">
+      <img src ="/icons/book-03.svg">
+      <p class ="drop-name">Travel Journals</p>
+      </div></a>
+      
+      <hr>
+       <div class="drop-list">
+      <img src ="/icons/settings.svg">
+      <p class ="drop-name">Setting</p>
+      </div>
+       <div class="drop-list">
+      <img src ="/icons/logout-04.svg">
+      <p class ="drop-name">Log out</p>
+      </div>
+       </div>
+
+
+<img src="/images/locator1.svg" id="locator1" alt="marker">
+<img src="/images/locator2.svg" id="locator2" alt="marker">
+<img src="/images/locator3.svg" id="locator3" alt="marker">
+<img src="/images/locator4.svg" id="locator4" alt="marker">
+<img src="/images/sun-flare.png" id="sunflare" alt="sunflare">
+    <main>
+      <div class="container-main container-mobile">
+      <section class="left-three">
+      <section class="left-two">
+        <div class="card-hello">
+    
+          <h1>Hello,</h1>
+          <h2>Maggie!</h2>
+          <div class="calendar">
+            <img src="/icons/calendar-02.svg" />
+            <p class="date"></p>
+          </div>
+
+          <div class="socials">
+            <img
+            id="btn-ig"
+              class="circle-social"
+              src="/icons/Instagram - Original.svg"
+              alt="instagram"
+            />
+            <img
+            id="btn-fb"
+              class="circle-social"
+              src="/icons/facebook.svg"
+              alt="facebook"
+            />
+            <img
+            id="btn-x"
+              class="circle-social"
+              src="/icons/Twitter X 1.svg"
+              alt="x"
+              width="49px"
+              height="49px"
+            />
+          </div>
+        </div>
+
+         <div class="card-hello-mobile">
+    
+          <h1>Hello, Maggie</h1>
+       
+          <div class="date-social">
+          <div class="calendar">
+            <img src="/icons/calendar-02.svg" />
+            <p class="date"></p>
+          </div>
+
+          <div class="socials">
+            <img
+              class="circle-social"
+              src="/icons/Instagram - Original.svg"
+              alt="instagram"
+            />
+            <img
+              class="circle-social"
+              src="/icons/facebook.svg"
+              alt="facebook"
+            />
+            <img
+              class="circle-social"
+              src="/icons/Twitter X 1.svg"
+              alt="x"
+              width="49px"
+              height="49px"
+            />
+          </div>
+          </div>
+        </div>
+
+        <div class="card-map">
+            <div class="section-title">
+              <img class="bi-icon" src="/icons/icon-add-location.svg" />
+              <a href="/html/location-map.html"><h3>Location Map</h3></a>
+            </div>
+            <a href="location-map.html">
+          <img src="/images/leaflet-demo.png" class="map"/></a>
+             <a href="/html/location-map.html">
+          <div class="btn-filled create">
+            New Location<img src="/icons/plus-white.svg" />
+          </div></a>       
+        </div>
+      </section>
+
+      <div class="card-journals">
+        <div class="wrapper">
+          <div class="section-title">
+            <img class="bi-icon" src="/icons/icon-folder.svg" />
+            <a href="/html/travel-journals.html">
+            <h3>Travel Journals</h3></a>
+          </div>
+          <a href="/html/create-journal.html">
+          <div class="btn-filled create">
+            Create<img src="/icons/plus-white.svg" />
+          </div></a>
+        </div>
+
+        <div class="cards">
+           <a href="/html/travel-journals.html">
+          <div class="mini-card">
+            <div class="img-wrap">
+              <p class="caption">Portugal</p>
+            </div>
+            <article>
+              <p class="small-date">2024.04.17</p>
+              <p class="journal-title">Explored Lisbon</p>
+              <p class="log">
+                We wandered through the charming Alfama district. After visiting
+                the iconic Belem Tower, we took a fun ride on the famous Tram
+                28.
+              </p>
+            </article>
+          </div>
+           </a>
+
+          <div class="mini-card">
+            <div class="img-wrap2">
+              <p class="caption">Indonesia</p>
+            </div>
+            <article>
+              <p class="small-date">2023.08.08</p>
+              <p class="journal-title">Retreat in Bali</p>
+              <p class="log">
+                We stayed in Ubud and enjoyed relaxing atmosphere in Tegallalang
+                Rice Terraces. Really amazing.
+              </p>
+            </article>
+          </div>
+
+          <div class="mini-card">
+            <div class="img-wrap3">
+              <p class="caption">Scotland, UK</p>
+            </div>
+            <article>
+              <p class="small-date">2023,01.25</p>
+              <p class="journal-title">Charming Edinburgh</p>
+              <p class="log">
+                Walked through the Royal Mile and pretty Old Town. We immersed
+                ourselves in the charm of this beautiful place.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class ="right-two right-two-mobile">
+        <div class="card-wish">
+          <div class="section-title">
+            <img class="bi-icon" src="/icons/icon-wishlist.svg" />
+            <h3>Wish List</h3>
+          </div>
+          <div class="container">
+            <div class="three-buttons">
+              <img
+              id = "wish-plus"
+                class="circle-small-btn"
+                src="/icons/plus-02.svg"
+                alt="plus"
+              />
+              <img
+                class="circle-small-btn"
+                src="/icons/edit-02.svg"
+                alt="pencil"
+              />
+              <img
+                class="circle-small-btn"
+                id="btn-delete"
+                src="/icons/trash-01.svg"
+                alt="trash"
+              />
+            </div>
+
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="wish-list1"
+                  class="checked"
+                  checked
+                />
+                <label for="wish-list1">Visit Hong Kong</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" class="unchecked" />
+                <label for="wish-list1">V&A Museum in London</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" checked />
+                <label for="wish-list1">See emboidery in Estonia</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" />
+                <label for="wish-list1">Enjoy breakfast in Paris</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" checked />
+                <label for="wish-list1">Walk around Cotswalds</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" />
+                <label for="wish-list1">Learn to dance in Hawaii</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" />
+                <label for="wish-list1">Maori culture in NZ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" checked />
+                <label for="wish-list1">Trail walk in USA</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <div class="country-card">
+      <div class="section-title">
+        <img class="bi-icon" src="/icons/icon-question.svg" />
+        <h3>Random Country</h3></div>
+
+        <div class="country-wrapper">
+
+        <div id="random1" class="random-country">
+<img class="flag" src="/images/canada.svg" alt="flag">
+
+<div class="country-description">
+
+  <p class="country-name">Canada</p>
+
+  <div class="data-list">
+
+  <div class="icon-data">
+  <img src="/icons/target-01.svg">
+  <p class ="country-data">Otawa</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/message-text-01.svg">
+  <p class ="country-data">English/French</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/currency-coin-dollar.svg">
+  <p class ="country-data">Canadian dollar</p>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<!-- switch -->
+
+<div id ="random2" class="random-country none">
+<img class="flag" src="/images/finland.svg" alt="flag">
+
+<div class="country-description">
+
+  <p class="country-name">Finland</p>
+
+  <div class="data-list">
+
+  <div class="icon-data">
+  <img src="/icons/target-01.svg">
+  <p class ="country-data">Helsinki</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/message-text-01.svg">
+  <p class ="country-data">Finnish/Swedish</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/currency-coin-dollar.svg">
+  <p class ="country-data">Euro</p>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<!-- switch -->
+ 
+<div id ="random3" class="random-country none">
+<img class="flag" src="/images/romania.svg" alt="flag">
+
+<div class="country-description">
+
+  <p class="country-name">Romania</p>
+
+  <div class="data-list">
+
+  <div class="icon-data">
+  <img src="/icons/target-01.svg">
+  <p class ="country-data">Bucharest</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/message-text-01.svg">
+  <p class ="country-data">Romanian</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/currency-coin-dollar.svg">
+  <p class ="country-data">Romanian leu</p>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<!-- switch -->
+  
+
+      <button class="btn-filled inspire">
+        Click to get inspired!<img
+          src="/icons/globe.svg
+        " />
+      </button>
+    </div>
+
+
+      </section>
+      </div>
+    </main>
+
+    <!-- tablet & mobile -->
+     <main>
+      <div class="container-main-tablet">
+     
+<div class="hello-map">
+         <div class="card-hello-mobile">
+    
+          <h1>Hello, Maggie!</h1>
+       
+
+          <div class="socials-mobile">
+            <img
+            id="mobile-ig" 
+              class="circle-social"
+              src="/icons/Instagram - Original.svg"
+              alt="instagram"
+            />
+            <img
+            id="mobile-fb"
+              class="circle-social"
+              src="/icons/facebook.svg"
+              alt="facebook"
+            />
+            <img
+            id="mobile-x"
+              class="circle-social"
+              src="/icons/Twitter X 1.svg"
+              alt="x"
+              width="48px"
+              height="48px"
+            />
+          </div>
+          </div>
+
+        <div class="card-map">
+            <div class="section-title">
+              <img class="bi-icon" src="/icons/icon-add-location.svg" />
+              <a href="/html/location-map.html"><h3>Location Map</h3></a>
+            </div>
+            <a href="location-map.html">
+          <img src="/images/leaflet-demo.png" class="map"/>
+            </a>
+
+            <a href="/html/location-map.html">
+          <div class="btn-filled create">
+            Add<img src="/icons/plus-white.svg" />
+          </div></a>
+        </div>
+</div>
+
+ <div class="travel-journals">
+        <div class="wrapper">
+
+          <div class="section-title">
+            <img class="bi-icon" src="/icons/icon-folder.svg" />
+             <a href="/html/travel-journals.html">
+            <h3>Travel Journals</h3></a>
+          </div>
+
+          <a href="/html/create-journal.html">
+          <div class="btn-filled create">
+            Create<img src="/icons/plus-white.svg" />
+          </div></a>
+        </div>
+
+        <div class="cards">
+           <a href="/html/travel-journals.html">
+          <div class="mini-card">
+            <div class="img-wrap">
+              <p class="caption">Portugal</p>
+            </div>
+            <article>
+              <p class="small-date">2024.04.17</p>
+              <p class="journal-title">Explored Lisbon</p>
+              <p class="log">
+                We wandered through the charming Alfama district. After visiting
+                the iconic Belem Tower, we took a fun ride on the famous Tram
+                28.
+              </p>
+            </article>
+          </div></a>
+
+          <div class="mini-card">
+            <div class="img-wrap2">
+              <p class="caption">Indonesia</p>
+            </div>
+            <article>
+              <p class="small-date">2023.08.08</p>
+              <p class="journal-title">Retreat in Bali</p>
+              <p class="log">
+                We stayed in Ubud and enjoyed relaxing atmosphere in Tegallalang
+                Rice Terraces. Really amazing.
+              </p>
+            </article>
+          </div>
+
+          <div class="mini-card">
+            <div class="img-wrap3">
+              <p class="caption">Scotland, UK</p>
+            </div>
+            <article>
+              <p class="small-date">2023,01.25</p>
+              <p class="journal-title">Charming Edinburgh</p>
+              <p class="log">
+                Walked through the Royal Mile and pretty Old Town. We immersed
+                ourselves in the charm of this beautiful place.
+              </p>
+            </article>
+          </div>
+        </div>
+        </div>
+
+        <div class="wish-random">
+        <div class="card-wish">
+          <div class="section-title">
+            <img class="bi-icon" src="/icons/icon-wishlist.svg" />
+            <h3>Wish List</h3>
+          </div>
+          <div class="container">
+            <div class="three-buttons">
+              <img
+              id="wish-plus-mobile"
+                class="circle-small-btn"
+                src="/icons/plus-02.svg"
+                alt="plus"
+              />
+              <img
+                class="circle-small-btn"
+                src="/icons/edit-02.svg"
+                alt="plus"
+              />
+              <img
+                class="circle-small-btn"
+                id="btn-delete"
+                src="/icons/trash-01.svg"
+                alt="plus"
+              />
+            </div>
+
+            <ul class="mobile-ul">
+              <li class="mobile-li">
+                <input
+                  type="checkbox"
+                  name="wish-list-1"
+                  class="checked"
+                  checked
+                />
+                <label for="wish-list-1">Visit Hong Kong</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" class="unchecked" />
+                <label for="wish-list1">V&A Museum in London</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" checked />
+                <label for="wish-list1">See emboidery in Estonia</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" />
+                <label for="wish-list1">Enjoy breakfast in Paris</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" checked />
+                <label for="wish-list1">Walk around Cotswalds</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" />
+                <label for="wish-list1">Learn to dance in Hawaii</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" />
+                <label for="wish-list1">Maori culture in NZ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wish-list1" checked />
+                <label for="wish-list1">Trail walk in USA</label>
+              </li>
+     
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="country-card">
+      <div class="section-title">
+        <img class="bi-icon" src="/icons/icon-question.svg" />
+        <h3>Random Country</h3></div>
+
+        <div class="country-wrapper">
+
+        <div id="mobile-random1" class="random-country">
+<img class="flag" src="/images/canada.svg" alt="flag">
+
+<div class="country-description">
+
+  <p class="country-name">Canada</p>
+
+  <div class="data-list">
+
+  <div class="icon-data">
+  <img src="/icons/target-01.svg">
+  <p class ="country-data">Otawa</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/message-text-01.svg">
+  <p class ="country-data">English/French</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/currency-coin-dollar.svg">
+  <p class ="country-data">Canadian dollar</p>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<!-- switch -->
+
+<div id ="mobile-random2" class="random-country none">
+<img class="flag" src="/images/finland.svg" alt="flag">
+
+<div class="country-description">
+
+  <p class="country-name">Finland</p>
+
+  <div class="data-list">
+
+  <div class="icon-data">
+  <img src="/icons/target-01.svg">
+  <p class ="country-data">Helsinki</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/message-text-01.svg">
+  <p class ="country-data">Finnish/Swedish</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/currency-coin-dollar.svg">
+  <p class ="country-data">Euro</p>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<!-- switch -->
+ 
+<div id ="mobile-random3" class="random-country none">
+<img class="flag" src="/images/romania.svg" alt="flag">
+
+<div class="country-description">
+
+  <p class="country-name">Romania</p>
+
+  <div class="data-list">
+
+  <div class="icon-data">
+  <img src="/icons/target-01.svg">
+  <p class ="country-data">Bucharest</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/message-text-01.svg">
+  <p class ="country-data">Romanian</p>
+  </div>
+
+  <div class="icon-data">
+  <img src="/icons/currency-coin-dollar.svg">
+  <p class ="country-data">Romanian leu</p>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<!-- switch -->
+  
+
+      <button class="btn-filled mobile-inspire">
+        Click to get inspired!<img
+          src="/icons/globe.svg
+        " />
+      </button>
+      </div>
+        </div>
+    </main>
+
+
+    <div class="delete-modal hide">
+      <img class="confirm" src="/icons/delete_confirm.png">
+      <p class="delete-msg">Are you sure you want to <span>delete</span> this item?</p>
+    </div>
+
+    <!-- wishlist modal -->
+
+    <div class="wish-modal hide">
+      <div class="close-contents">
+      <img id="close-wish" src="/icons/close.svg">
+      <div class="wish-center">
+    <div class="new-title">
+<img id="circle-wishlist" src="/images/logo-mark.svg" width="16px" height="16px"></div>
+
+<p id="wish-msg">
+Add a new item to your Wish List!</p>
+
+<input id="wish-input" type="text">
+
+<button id="wish-btn" class="btn-filled"> Add a New Wish <img src="/icons/plus-white.svg"> 
+</button>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="wish-modal-mobile hide">
+      <div class="close-contents">
+      <img id="close-wish-mobile" src="/icons/close.svg">
+      <div class="wish-center">
+    <div class="new-title">
+<img id="circle-wishlist" src="/images/logo-mark.svg" width="16px" height="16px"></div>
+
+<p id="wish-msg">
+Add a new item to your Wish List!</p>
+
+<input id="wish-input-mobile" type="text">
+
+<button id="wish-btn-mobile" class="btn-filled"> Add a New Wish <img src="/icons/plus-white.svg"> 
+</button>
+      </div>
+    </div>
+    </div>
+
+    <!-- share popup -->
+
+    <div id="share-card-x" class="share-card hide">
+    <p class="experience">Share your experience!</p>
+    <div class="clip-wrapper">
+    <img class="file-clip" src="/icons/link-angled.svg">
+    <p class ="url-link">https://traveleaf.app/journal</p></div>
+
+    <button class="btn-filled">Share on X
+        <img src ="/icons/Twitter X 1.svg">
+    </button>
+    </div>
+
+ <div id="share-card-ig" class="share-card hide">
+    <p class="experience">Share your experience!</p>
+    <div class="clip-wrapper">
+    <img class="file-clip" src="/icons/link-angled.svg">
+    <p class ="url-link">https://traveleaf.app/journal</p></div>
+
+    <button class="btn-filled">Share on Instagram
+        <img src ="/icons/Instagram - Original.svg">
+    </button>
+    </div>
+
+ <div id="share-card-fb" class="share-card hide">
+    <p class="experience">Share your experience!</p>
+    <div class="clip-wrapper">
+    <img class="file-clip" src="/icons/link-angled.svg">
+    <p class ="url-link">https://traveleaf.app/journal</p></div>
+
+    <button class="btn-filled">Share on Facebook
+        <img src ="/icons/facebook.svg">
+    </button>
+    </div>
+
+    <!-- share cards for mobile -->
+
+    <div id="mobile-share-card-x" class="share-card hide">
+    <p class="experience">Share your experience!</p>
+    <div class="clip-wrapper">
+    <img class="file-clip" src="/icons/link-angled.svg">
+    <p class ="url-link">https://traveleaf.app/journal</p></div>
+
+    <button class="btn-filled">Share on X
+        <img src ="/icons/Twitter X 1.svg">
+    </button>
+    </div>
+
+ <div id="mobile-share-card-ig" class="share-card hide">
+    <p class="experience">Share your experience!</p>
+    <div class="clip-wrapper">
+    <img class="file-clip" src="/icons/link-angled.svg">
+    <p class ="url-link">https://traveleaf.app/journal</p></div>
+
+    <button class="btn-filled">Share on Instagram
+        <img src ="/icons/Instagram - Original.svg">
+    </button>
+    </div>
+
+ <div id="mobile-share-card-fb" class="share-card hide">
+    <p class="experience">Share your experience!</p>
+    <div class="clip-wrapper">
+    <img class="file-clip" src="/icons/link-angled.svg">
+    <p class ="url-link">https://traveleaf.app/journal</p></div>
+
+    <button class="btn-filled">Share on Facebook
+        <img src ="/icons/facebook.svg">
+    </button>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

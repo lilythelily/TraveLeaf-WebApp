@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.5 35.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffce54;
+      }
+
+      .cls-2 {
+        fill: #ed5565;
+      }
+
+      .cls-3 {
+        fill: #4758a9;
+      }
+    </style>
+  </defs>
+  <g id="svg85412">
+    <g id="layer163">
+      <g id="chad">
+        <rect id="Rounded_Rectangle_7_copy-32" data-name="Rounded Rectangle 7 copy-32" class="cls-1" width="52.5" height="35.25"/>
+        <rect id="Rectangle_1_copy_15-2" data-name="Rectangle 1 copy 15-2" class="cls-2" x="35" width="17.5" height="35.25"/>
+        <rect id="Rectangle_1_copy_16-2" data-name="Rectangle 1 copy 16-2" class="cls-3" width="17.5" height="35.25"/>
+      </g>
+    </g>
+  </g>
+</svg>
