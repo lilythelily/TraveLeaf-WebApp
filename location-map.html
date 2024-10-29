@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TraveLeaf</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/location.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script 
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!-- maptiler -->
+     <script src="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.3/leaflet.umd.js"></script>
+<link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.3/style.css" rel="stylesheet">
+ 
+  </head>
+
+
+    <!-- top nav & modal start -->
+
+     <body>
+    <nav>
+     <a href="/html/index.html">
+        <div class="logo1">
+        <img src="/images/logo.svg" alt="logo" /></a>
+        <p id="slogan">Your Personal Travel Journal</p>
+      </div>
+
+      <div class="menu">
+        <button class="btn-outline">
+          Log out<img src="/icons/logout-04.svg" />
+        </button>
+        <img class="circle-large-btn" src="/icons/bell-03.svg" alt="bell" />
+        <img
+          class="circle-large-btn"
+          id="menu-btn"
+          src="/icons/menu-03.svg"
+          alt="menu"
+        />
+      </div>
+    </nav>
+
+    <div class="dropdown-modal hide">
+         <a href="/html/index.html">
+      <div class="drop-list">
+      <img src ="/icons/home-04.svg">
+      <p class ="drop-name">Home</p>
+      </div></a>
+
+      <a href="/html/create-journal.html">
+       <div class="drop-list">
+      <img src ="/icons/edit-02.svg">
+      <p class ="drop-name">Create a Journal</p>
+      </div></a>
+
+  <a href="/html/location-map.html">
+       <div class="drop-list">
+      <img src ="/icons/marker-02.svg">
+      <p class ="drop-name">Location Map</p>
+      </div>
+    </a>
+
+     <a href="/html/travel-journals.html">
+      <div class="drop-list">
+        <img src="/icons/book-03.svg" />
+        <p class="drop-name">Travel Journals</p>
+      </div></a>
+      <hr />
+      <div class="drop-list">
+        <img src="/icons/settings.svg" />
+        <p class="drop-name">Setting</p>
+      </div>
+      <div class="drop-list">
+        <img src="/icons/logout-04.svg" />
+        <p class="drop-name">Log out</p>
+      </div>
+    </div>
+
+    <div class="mobile-nav">
+      <img src="/images/logo.svg" alt="logo" />
+      <img
+        class="circle-large-btn"
+        id="mobile-menu"
+        src="/icons/menu-03.svg"
+        alt="menu"
+      />
+    </div>
+
+    <div class="mobile-dropdown-modal hide">
+         <a href="/html/index.html">
+      <div class="drop-list">
+      <img src ="/icons/home-04.svg">
+      <p class ="drop-name">Home</p>
+      </div></a>
+
+      <a href="/html/create-journal.html">
+       <div class="drop-list">
+      <img src ="/icons/edit-02.svg">
+      <p class ="drop-name">Create a Journal</p>
+      </div></a>
+
+  <a href="/html/location-map.html">
+       <div class="drop-list">
+      <img src ="/icons/marker-02.svg">
+      <p class ="drop-name">Location Map</p>
+      </div>
+    </a>
+
+     <a href="/html/travel-journals.html">
+      <div class="drop-list">
+        <img src="/icons/book-03.svg" />
+        <p class="drop-name">Travel Journals</p>
+      </div></a>
+      <hr />
+      <div class="drop-list">
+        <img src="/icons/settings.svg" />
+        <p class="drop-name">Setting</p>
+      </div>
+      <div class="drop-list">
+        <img src="/icons/logout-04.svg" />
+        <p class="drop-name">Log out</p>
+      </div>
+    </div>
+
+    <img src="/images/locator1.svg" id="locator1" alt="marker" />
+    <img src="/images/locator2.svg" id="locator2" alt="marker" />
+    <img src="/images/locator3.svg" id="locator3" alt="marker" />
+    <img src="/images/locator4.svg" id="locator4" alt="marker" />
+    <img src="/images/sun-flare.png" id="sunflare" alt="sunflare" />
+
+    <!-- new contents start -->
+
+    <main>
+      <div class="top-two">
+        <aside>
+          <div class="two-titles">
+            <div class="title">
+              <img src="/icons/icon-add-location.svg" width="32px" />
+              <h1>Location Map</h1>
+            </div>
+
+            <p class="subtitle">Record locations you have visited!</p>
+          </div>
+
+          <form>
+            <label for="country">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Germany"
+            />
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Frankfurt" />
+
+            <label for="date">Month/Year</label>
+            <input type="date" id="date" name="date" placeholder="11/2022" />
+
+            <label for="Memo">Memo</label>
+            <input
+              type="memo"
+              id="memo"
+              name="memo"
+              placeholder="Visited Gaethe House Museum!"
+            />
+          </form>
+
+          <button id="create" class="btn-filled">
+            Create<img src="/icons/plus-white.svg" />
+          </button>
+        </aside>
+
+        <div id="map">
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="list-item">
+          <p class="list-date"><img src="/icons/calendar-02.svg" /></p>
+          <p class="list-country-name">
+            <img id="icon-color" src="/icons/globe-gray.svg" />
+          </p>
+          <p class="list-city"><img src="/icons/target-01.svg" /></p>
+          <p class="list-description">
+            <img src="/icons/book-03.svg" />
+          </p>
+          <p id="icon-opacity" class="list-marker">
+            <img src="/icons/marker-02.svg" />
+          </p>
+        </div>
+
+            <div id = "new-list" class="new-list-item none">
+          <p id ="new-list-date" class="list-date"></p>
+          <p id ="new-list-country" class="list-country-name"></p>
+          <p id = "new-list-city" class="list-city"></p>
+          <p id ="new-list-description" class="list-description">
+          </p>
+          <p class="list-marker"><img src="/icons/marker-02.svg" /></p>
+        </div>
+
+
+        <div class="list-item">
+          <p class="list-date">2021-05-11</p>
+          <p class="list-country-name">Estonia</p>
+          <p class="list-city">Tallinn</p>
+          <p class="list-description">
+            Delightful blend of medieval charm and modern vibrancy!
+          </p>
+          <p class="list-marker"><img src="/icons/marker-02.svg" /></p>
+        </div>
+
+        <div class="list-item">
+          <p class="list-date">2021-09-26</p>
+          <p class="list-country-name">Spain</p>
+          <p class="list-city">Barcelona</p>
+          <p class="list-description">Amazing Sagrada Família!</p>
+          <p class="list-marker"><img src="/icons/marker-02.svg" /></p>
+        </div>
+
+        <div class="list-item">
+          <p class="list-date">2019-10-13</p>
+          <p class="list-country-name">Japan</p>
+          <p class="list-city">Kyoto</p>
+          <p class="list-description">
+            Experienced a deep spiritual tradition of Japan.
+          </p>
+          <p class="list-marker"><img src="/icons/marker-02.svg" /></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/map.js"></script>
+  </body>
+</html>
